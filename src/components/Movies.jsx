@@ -102,10 +102,10 @@ export default function Movies() {
 
   return (
     <>
-      <div className="my-4 p-3">
+      <div className="app p-3">
         <div className="flex">
-          <h3 className="text-2xl">Trending</h3>
-          <div className="mx-3 flex text-lg rounded-xl border-2 border-gray-400">
+          <h3 className="text-2xl text-white">Trending</h3>
+          <div className="mx-3 flex text-white text-lg rounded-xl border-2 border-gray-400">
             <div
               className={
                 openTab === 1

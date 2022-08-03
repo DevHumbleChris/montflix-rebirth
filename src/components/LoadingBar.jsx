@@ -6,7 +6,7 @@ export default function LoadingBar() {
         <div className="rounded-md p-4 max-w-sm w-64 shrink-0">
           <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-              <div className="h-80 bg-slate-200 rounded"></div>
+              <div className="h-60 bg-slate-200 rounded"></div>
               <div className="space-y-3">
                 <div className="h-2 bg-slate-200 rounded"></div>
                 <div className="h-2 bg-slate-200 rounded"></div>
@@ -17,7 +17,7 @@ export default function LoadingBar() {
         <div className="rounded-md p-4 max-w-sm w-64 shrink-0">
           <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-              <div className="h-80 bg-slate-200 rounded"></div>
+              <div className="h-60 bg-slate-200 rounded"></div>
               <div className="space-y-3">
                 <div className="h-2 bg-slate-200 rounded"></div>
                 <div className="h-2 bg-slate-200 rounded"></div>
@@ -28,7 +28,7 @@ export default function LoadingBar() {
         <div className="rounded-md p-4 max-w-sm w-64 shrink-0">
           <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-              <div className="h-80 bg-slate-200 rounded"></div>
+              <div className="h-60 bg-slate-200 rounded"></div>
               <div className="space-y-3">
                 <div className="h-2 bg-slate-200 rounded"></div>
                 <div className="h-2 bg-slate-200 rounded"></div>
@@ -39,7 +39,7 @@ export default function LoadingBar() {
         <div className="rounded-md p-4 max-w-sm w-64 shrink-0">
           <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-              <div className="h-80 bg-slate-200 rounded"></div>
+              <div className="h-60 bg-slate-200 rounded"></div>
               <div className="space-y-3">
                 <div className="h-2 bg-slate-200 rounded"></div>
                 <div className="h-2 bg-slate-200 rounded"></div>
@@ -50,7 +50,7 @@ export default function LoadingBar() {
         <div className="rounded-md p-4 max-w-sm w-64 shrink-0">
           <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-              <div className="h-80 bg-slate-200 rounded"></div>
+              <div className="h-60 bg-slate-200 rounded"></div>
               <div className="space-y-3">
                 <div className="h-2 bg-slate-200 rounded"></div>
                 <div className="h-2 bg-slate-200 rounded"></div>
@@ -61,7 +61,7 @@ export default function LoadingBar() {
         <div className="rounded-md p-4 max-w-sm w-64 shrink-0">
           <div className="animate-pulse flex space-x-4">
             <div className="flex-1 space-y-6 py-1">
-              <div className="h-80 bg-slate-200 rounded"></div>
+              <div className="h-60 bg-slate-200 rounded"></div>
               <div className="space-y-3">
                 <div className="h-2 bg-slate-200 rounded"></div>
                 <div className="h-2 bg-slate-200 rounded"></div>
