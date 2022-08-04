@@ -56,7 +56,7 @@
     margin-left: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(170, 20, 20, 0.5);
 }
 .banner_button:hover {
     color: #000;
@@ -74,4 +74,10 @@
         rgba(37, 37, 37, 0.61),
         #111
     );
+}
+
+@media screen and (max-width: 720px) {
+    .banner_title {
+        @apply text-3xl;
+    }
 }
