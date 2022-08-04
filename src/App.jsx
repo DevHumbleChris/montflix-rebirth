@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import Movies from './components/Movies'
+import Banner from './components/Banner'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-    </div>
+    <main className="App">
+      <Banner />
+      <Movies />
+    </main>
   )
 }
 
