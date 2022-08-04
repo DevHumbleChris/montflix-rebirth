@@ -76,7 +76,7 @@ if (data) {
         <div className='banner_contents'>
           <h3 className='banner_title'>{movie?.title || movie?.name }</h3>
           <div className='buttons'>
-            <button className='banner_button'>Play trailer</button>
+            <button className='banner_button'>Watch Trailer</button>
             <button className='banner_button'>View More</button>
           </div>
           <h4 className='banner_description'>

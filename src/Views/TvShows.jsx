@@ -1,5 +1,6 @@
+import { Outlet } from 'react-router-dom'
 export default function TvShows() {
-    return(
-        <div>Tv Shows</div>
+    return (
+        <Outlet />
     )
 }
