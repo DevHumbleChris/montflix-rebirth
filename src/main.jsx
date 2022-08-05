@@ -18,8 +18,8 @@ const client = new ApolloClient({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<App />}></Route>
           <Route path="tv" element={<TvShows />}>
