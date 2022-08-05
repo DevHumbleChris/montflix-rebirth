@@ -6,7 +6,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Movies from "./Views/Movies";
-import TvShows from "./views/TvShows";
+import TvShows from "./TvShows"
 import MovieDetails from "./components/MovieDetails";
 import TvShowsDetails from "./components/TvShowsDetails";
 
