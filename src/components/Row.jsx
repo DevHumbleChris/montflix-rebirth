@@ -8,13 +8,14 @@ export default function Row({ data }) {
           })
     }
   const { trending } = data;
+  console.log(trending)
   return (
     <>
       <div className="movie p-2 flex overflow-x-auto scroll-smooth mt-3">
         {trending.map((movie) => {
           return (
             <div key={movie.id} className="mx-2 shrink-0">
-              <Link to={movie.media_type === 'movie' ? `/movie/${movie.id}`: `/tv/${movie.id}`}>
+              <Link to={`/${movie.media_type}/${movie.id}`}>
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   className="rounded-xl h-60 movie-poster"

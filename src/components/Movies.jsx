@@ -14,77 +14,28 @@ export default function Movies() {
         adult
         backdrop_path
         poster_path
-        original_language
-        popularity
-        vote_average
-        vote_count
         first_air_date
         release_date
-        video
         media_type
-        gender
         profile_path
-        known_for {
-          id
-          name
-          title
-          adult
-          backdrop_path
-          poster_path
-          original_language
-          popularity
-          vote_average
-          vote_count
-          first_air_date
-          release_date
-          video
-          media_type
-          gender
-          profile_path
-        }
       }
     }
   `;
   const TRENDIND_ALL_WEEK = gql`
   query Trending($mediaType: String!, $timeWindow: String!) {
-    trending(media_type: $mediaType, time_window: $timeWindow) {
-      id
-      name
-      title
-      adult
-      backdrop_path
-      poster_path
-      original_language
-      popularity
-      vote_average
-      vote_count
-      first_air_date
-      release_date
-      video
-      media_type
-      gender
-      profile_path
-      known_for {
-        id
-        name
-        title
-        adult
-        backdrop_path
-        poster_path
-        original_language
-        popularity
-        vote_average
-        vote_count
-        first_air_date
-        release_date
-        video
-        media_type
-        gender
-        profile_path
-      }
-    }
+  trending(media_type: $mediaType, time_window: $timeWindow) {
+    id
+    name
+    title
+    backdrop_path
+    poster_path
+    popularity
+    first_air_date
+    release_date
+    media_type
+    profile_path
   }
-`;
+}`;
 
   const { loading, data, error } = useQuery(TRENDIND_ALL_DAY, {
     variables: {
