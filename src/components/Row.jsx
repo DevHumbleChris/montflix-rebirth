@@ -7,12 +7,10 @@ export default function Row({ data }) {
             addSuffix: true
           })
     }
-  const { trending } = data;
-  console.log(trending)
   return (
     <>
       <div className="movie p-2 flex overflow-x-auto scroll-smooth mt-3">
-        {trending.map((movie) => {
+        {data.map((movie) => {
           return (
             <div key={movie.id} className="mx-2 shrink-0">
               <Link to={`/${movie.media_type}/${movie.id}`}>
