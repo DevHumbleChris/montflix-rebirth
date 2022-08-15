@@ -71,8 +71,8 @@ export default function Movies() {
           <div
             className={
               openTab === 1
-                ? "mr-2 bg-[#032541] text-white px-2 rounded-xl"
-                : "mr-2"
+                ? "mr-2 bg-[#032541] text-white px-2 rounded-xl cursor"
+                : "mr-2 cursor"
             }
             onClick={() => setOpenTab(1)}
           >
@@ -80,7 +80,7 @@ export default function Movies() {
           </div>
           <div
             className={
-              openTab === 2 ? "bg-[#032541] text-white px-2 rounded-xl" : ""
+              openTab === 2 ? "bg-[#032541] text-white px-2 rounded-xl cursor" : "cursor"
             }
             onClick={() => setOpenTab(2)}
           >

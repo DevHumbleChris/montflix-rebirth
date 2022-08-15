@@ -4,24 +4,22 @@ export const mainStore = createSlice({
     name: 'mainStore',
     initialState: {
         count: 0,
-        trendingAllDay: []
+        trendingAllDay: [],
+        isMovieTrailerModalOpen: false
     },
     reducers: {
-        incCount: (state) => {
-            return state.count + 1
-        },
-        decCount: (state) => {
-            return state.count - 1
-        },
         getTrendingAllDay: (state, { payload }) => {
             if (payload) {
                 state.trendingAllDay = payload.trending
             }
             return state
+        },
+        setMovieTrailerModal: (state) => {
+            state.isMovieTrailerModalOpen = !state.isMovieTrailerModalOpen
         }
     }
 })
 
-export const { incCount, decCount, getTrendingAllDay } = mainStore.actions
+export const { incCount, decCount, getTrendingAllDay, setMovieTrailerModal } = mainStore.actions
 
 export default mainStore.reducer

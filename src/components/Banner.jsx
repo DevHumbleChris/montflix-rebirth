@@ -1,6 +1,15 @@
 import { useQuery, gql } from '@apollo/client'
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom'
+import { setMovieTrailerModal } from '../store/mainStore'
+import MovieTrailerModal from './MovieTrailerModal';
 
 export default function Banner() {
+  const dispatch = useDispatch()
+
+  const openMovieTrailerModal = () => {
+    dispatch(setMovieTrailerModal())
+  }
   const TRENDIND_ALL_WEEK = gql`
   query Trending($mediaType: String!, $timeWindow: String!) {
     trending(media_type: $mediaType, time_window: $timeWindow) {
@@ -76,9 +85,10 @@ if (data) {
         <div className='banner_contents'>
           <h3 className='banner_title'>{movie?.title || movie?.name }</h3>
           <div className='buttons'>
-            <button className='banner_button'>Watch Trailer</button>
-            <button className='banner_button'>View More</button>
+            <button className='banner_button' onClick={openMovieTrailerModal}>Watch Trailer</button>
+            <Link to={`/${movie?.media_type}/${movie?.id}`} className='banner_button mx-2'>View More</Link>
           </div>
+          <MovieTrailerModal movie={movie}/>
           <h4 className='banner_description'>
             {truncate(movie?.overview, 150)}
           </h4>
